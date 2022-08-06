@@ -80,7 +80,7 @@ jQuery(document).ready(function($) {
             } else {
                 //remove the background property so it comes transparent again (defined in your css)
                $(".header").removeClass("active");
-            }
+            } 
         });
         // Typed Initiate
     if ($('.tete h3').length == 1) {
@@ -89,6 +89,18 @@ jQuery(document).ready(function($) {
             strings: typed_strings.split(', '),
             typeSpeed: 100,
             backSpeed: 20, 
+            smartBackspace: false,
+            loop: true
+        });
+    }
+
+    // Typed Initiate
+    if ($('.left-content p').length == 1) {
+        var typed_string = $('.left-content .typed-text').text();
+        var typed = new Typed('.left-content p', {
+            strings: typed_string.split('?'),
+            typeSpeed: 10,
+            backSpeed: 500000,
             smartBackspace: false,
             loop: true
         });

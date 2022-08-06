@@ -14,6 +14,118 @@
     font-weight: 300;
     color: #222222;
 }
+
+.left-content .typed-text{
+	display: none;
+}
+.left-content p {
+    display: inline-block;
+    margin: 0;
+    height: 25px;
+    font-size: 25px;
+}
+
+
+/**********************************/
+/********* Education CSS **********/
+/**********************************/
+.education {
+    position: relative;
+    padding: 60px 30px;
+}
+
+.education .edu-col {
+    position: relative;
+    width: 100%;
+    padding: 20px 0 20px 20px;
+    border-left: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+}
+
+.education .col-md-6:first-child .edu-col {
+    padding-top: 0;
+}
+
+.education .col-md-6:last-child .edu-col {
+    border-bottom: none;
+    padding-bottom: 0;
+}
+
+@media (min-width: 768px) {
+    .education .col-md-6:nth-child(-n+2) .edu-col {
+        padding-top: 0;
+    }
+
+    .education .col-md-6:last-child .edu-col,
+    .education .col-md-6:nth-last-child(2) .edu-col {
+        border-bottom: none;
+        padding-bottom: 0;
+    }
+}
+
+.education .edu-col span {
+    position: relative;
+    display: block;
+    font-size: 13px;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+}
+
+.education .edu-col span::before {
+    position: absolute;
+    content: "";
+    width: 11px;
+    height: 11px;
+    background: #fff;
+    top: 5px;
+    left: -26px;
+    border-radius: 5px;
+}
+
+.education .edu-col span i {
+    color: #fff;
+}
+
+.education .edu-col h3 {
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.education .edu-col p {
+    margin: 0;
+}
+
+.contact .info-box {
+  color: #444444;
+  text-align: center;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.6);
+  padding: 20px 0 30px 0;
+  border-radius: 4px;
+}
+
+.contact .info-box i {
+  font-size: 32px;
+  color: #fff;
+  border-radius: 50%;
+  padding: 8px;
+  border: 2px dotted #f8d4d5;
+}
+
+.contact .info-box h3 {
+  font-size: 20px;
+  color: #fff;
+  font-weight: 700;
+  margin: 10px 0;
+}
+
+.contact .info-box p {
+  padding: 0;
+  line-height: 24px;
+  color: #fff;
+  font-size: 14px;
+  margin-bottom: 0;
+}
 @keyframes seq-preloader {
   50% {
     opacity: 1;
@@ -303,19 +415,19 @@ nav a:hover::before {
 }
 
 .slides .slide:nth-child(1) {
-  background-image: url(../img/code.jpg);
+  background-image: url(../img/uMiYha.jpg);
 }
 .slides .slide:nth-child(2) {
-  background-image: url(../img/goodthings.jpg);
+  background-image: url(../img/uMiYha.jpg);
 }
 .slides .slide:nth-child(3) {
-  background-image: url(../img/third_bg.jpg);
+  background-image: url(../img/uMiYha.jpg);
 }
 .slides .slide:nth-child(4) {
-  background-image: url(../img/fourth_bg.jpg);
+  background-image: url(../img/uMiYha.jpg);
  }
 .slides .slide:nth-child(5) {
-  background-image: url(../img/fifth_bg.jpg);
+  background-image: url(../img/uMiYha.jpg);
 }
 .slides .slide img {
   width: 100%;
