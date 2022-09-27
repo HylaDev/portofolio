@@ -18,13 +18,16 @@
 .left-content .typed-text{
 	display: none;
 }
+
 .left-content p {
     display: inline-block;
     margin: 0;
     height: 25px;
     font-size: 25px;
 }
-
+.right-content{
+	margin-top: 5%;
+}
 
 /**********************************/
 /********* Education CSS **********/
