@@ -95,9 +95,9 @@ jQuery(document).ready(function($) {
     }
 
     // Typed Initiate
-    if ($('.left-content p').length == 1) {
+    if ($('.left-content span').length == 1) {
         var typed_string = $('.left-content .typed-text').text();
-        var typed = new Typed('.left-content p', {
+        var typed = new Typed('.left-content span', {
             strings: typed_string.split('?'),
             typeSpeed: 10,
             backSpeed: 500000,
