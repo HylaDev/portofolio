@@ -2,21 +2,18 @@ jQuery(document).ready(function($) {
 
 	'use strict';
 
-        $(window).load(function() { // makes sure the whole site is loaded
-            $(".seq-preloader").fadeOut(); // will first fade out the loading animation
-            $(".sequence").delay(500).fadeOut("slow"); // will fade out the white DIV that covers the website.
+        $(window).load(function() { 
+            $(".seq-preloader").fadeOut(); 
+            $(".sequence").delay(500).fadeOut("slow"); 
         })
       
         
         $(function() {
   
         function showSlide(n) {
-            // n is relative position from current slide
-          
-            // unbind event listener to prevent retriggering
+
             $body.unbind("mousewheel");
           
-            // increment slide number by n and keep within boundaries
             currSlide = Math.min(Math.max(0, currSlide + n), $slide.length-1);
             
             var displacment = window.innerWidth*currSlide;
